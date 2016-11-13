@@ -37,13 +37,23 @@ fieldset textarea {
 	border-radius: 10px;
 }
 
+form input[type="text"]:focus, form textarea:focus {
+	text-transform: capitalize;
+}
+
+
+.main_menu {
+	list-style-type: none;
+}
+
 .main_menu > li > a {
 	font-style: italic;
 	font-size: 17px;
 	color: #070856;
 }
-.main_menu {
-	list-style-type: none;
+
+.main_menu:hover a{
+	color: green;
 }
 
 .chetire_a {
@@ -87,5 +97,36 @@ fieldset textarea {
 .border_img img {
 	border-style: groove;
 	border-color: #001089;
+	border-width: 3px
 
 }
+
+.border_img img:hover {
+	border-width: 0px;
+	margin: 3px;
+
+}
+
+.page_product p:first-letter {
+	font: italic 1.5em  sans-serif;
+}
+
+.table_th, .table_th td {
+	border: 1px solid black;
+	vertical-align: center;
+	text-align: center;
+	border-collapse: collapse;
+	margin: 0 auto;
+	padding: 3px;
+}
+
+.table_th tr:first-child {
+	height: 50;
+}
+
+
+#email:focus {
+	color: #050f5f;
+	background-color: #fffbda;
+}
+
