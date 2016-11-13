@@ -1,10 +1,10 @@
 .body {
 	width: 100%;
 	max-width: 1024px;
-	min-width: 320px;
+	min-width: 250px;
 	margin: 0 auto;
 	font-family: 'Scada', sans-serif;
-	line-height: 0;
+	background: #ebebeb;
 }
 
 .body a {
@@ -14,11 +14,6 @@
 
 @media screen and (min-width:0px) and (max-width:320px) {
 /* Display 320px */
-	.body {
-
-
-		background: red;
-	}
 
 	.navigation {
 		height: 37px;
@@ -58,15 +53,24 @@
 		width: 100%;
 	}
 
+	.content h1 {
+		margin: 35px 30px 35px 40px;
+		font-size: 19pt;
+	}
+
+	.content p {
+		margin: 35px 30px 35px 40px;
+		font-size: 13.5pt;
+		text-align: left;
+		text-indent: 0;
+	}
+
+
+
 }
 
 @media screen and (min-width:321px) and (max-width:640px) {
  /*Display 640px */
-	.body {
-
-
-		background: green;
-	}
 
 	.navigation {
 		height: 74px;
@@ -109,15 +113,22 @@
 		width: 100%;
 	}
 
+	.content h1 {
+		margin: 35px 30px 35px 40px;
+		font-size: 30pt;
+	}
+
+	.content p {
+		margin: 35px 30px 35px 40px;
+		font-size: 22pt;
+		text-align: left;
+		text-indent: 0;
+	}
+
 }
 
 @media screen and (min-width:641px) and (max-width:980px) {
  /*Display 980px */
-	.body {
-
-
-		background: blue;
-	}
 
 	.navigation {
 		height: 97px;
@@ -160,19 +171,25 @@
 		vertical-align: top;
 	}
 	.image_01 img, .image_02 img, .image_03 img {
-		/*display: inline-block;*/
 		width: 100%;
 	}
+
+	.content h1 {
+		margin: 35px 30px 35px 40px;
+		font-size: 30pt;
+	}
+
+	.content p {
+		margin: 35px 30px 35px 40px;
+		font-size: 14pt;
+		text-indent: 0;
+	}
+
 
 }
 
 @media screen and (min-width:981px) {
  /*Display 1024px and later */
-	.body {
-
-
-		background: pink;
-	}
 
 	.navigation {
 		height: 97px;
@@ -215,26 +232,40 @@
 		vertical-align: top;
 	}
 	.image_01 img, .image_02 img, .image_03 img {
-		/*display: inline-block;*/
 		width: 100%;
 	}
+
+	.content h1 {
+		margin: 35px 30px 35px 40px;
+		font-size: 30pt;
+	}
+
+	.content p {
+		margin: 35px 30px 35px 40px;
+		font-size: 14pt;
+		text-indent: 0;
+	}
+
 
 }
 
 
+header {
+	line-height: 0;
+}
 .navigation {
 	display: inline-block;
 	font-weight: bold;
 	width: 100%;
 	background: #373c3f;
 	color: white;
-	line-height: 0;
+	line-height: 1;
 }
 
 .navigation a {
 	font-weight: bold;
 	color: white;
-	line-height: 0;
+	line-height: 1;
 }
 
 .navigation .nothing {
@@ -242,7 +273,6 @@
 	height: 100%;
 	width: 0;
 	vertical-align: middle;
-	background: green;
 }
 
 .banner_01, .banner_01 {
@@ -250,9 +280,34 @@
 }
 
 
+.content {
+	line-height: 1;
+}
+
+.content h1 {
+	color: #088ca5;
+}
+
+.content div, .content h1 {
+	/*margin: 15px;*/
+	/*display: block;*/
+}
 
 
+footer {
+	padding: 10px 0px 20px 0px;
+}
 
+
+p {
+	text-align: justify;
+	text-indent: 1em;
+}
+
+footer p {
+	padding: 5px 20px;
+	text-align: right;
+}
 
 
 /*body {
