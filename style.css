@@ -14,13 +14,79 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-fieldset {
+.index header {
+	height: 120px;
+	margin: 0 auto;
+}
+
+header {
+ background-image: url(image/header_fon_1.jpg);
+}
+
+header li:hover a {
+	color: green;
+}
+
+header > img {
+	display: inline-block;
+	vertical-align: middle;
+	border: 0px;
+	margin-left: 15px;
+	padding: 0px;
+	width: 134px;
+	height: 100px;
+}
+
+
+header ul {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	max-width: 551px;
+	vertical-align: middle;
+}
+
+.index header ul {
+	width: 551px;
+}
+
+header li {
+	padding: 3px 5px;
+	display: inline-block;
+}
+
+header > li > a {
+	font-style: italic;
+	font-size: 17px;
+	color: #070856;
+}
+
+footer {
+	height: 50px;
+	margin: 0 auto;
+	padding: 3px 0px;
+	text-align: center;
+	background: #e3e3e3;
+}
+
+footer p {
+	text-align: right;
+	margin: 10px 20px 0px 0px;
+}
+
+.index footer, .index header {
+	width: 700px;
+}
+
+.form_contact fieldset {
 	width: auto;
 	/*margin: 0 auto;*/
 	text-align: center;
 	line-height: 48px;
 }
-fieldset input {
+.form_contact fieldset input {
 	width: 300px;
 	height: 32px;
 	color: #6b64ad;
@@ -28,7 +94,7 @@ fieldset input {
 	background: #F3F3F3;
 	border-radius: 15px;
 }
-fieldset textarea {
+.form_contact fieldset textarea {
 	width: 350px;
 	height: 250px;
 	color: #6b64ad;
@@ -37,23 +103,8 @@ fieldset textarea {
 	border-radius: 10px;
 }
 
-form input[type="text"]:focus, form textarea:focus {
+.form_contact input[type="text"]:focus, .form_contact textarea:focus {
 	text-transform: capitalize;
-}
-
-
-.main_menu {
-	list-style-type: none;
-}
-
-.main_menu > li > a {
-	font-style: italic;
-	font-size: 17px;
-	color: #070856;
-}
-
-.main_menu:hover a{
-	color: green;
 }
 
 .chetire_a {
@@ -80,10 +131,6 @@ form input[type="text"]:focus, form textarea:focus {
 	font-style: italic;
 	line-height: 17px;
 	color: #565f58;
-}
-
-.footer {
-	text-align: center;
 }
 
 .blocks_start > div{
@@ -122,6 +169,49 @@ form input[type="text"]:focus, form textarea:focus {
 
 .table_th tr:first-child {
 	height: 50;
+}
+
+.container {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.buy_ship > section {
+	overflow: hidden;
+	padding: 5px;
+}
+
+.buy_left, .buy_right {
+	width: 150px;
+	text-align: center;
+}
+
+.buy_left {
+	float: left;
+}
+
+.buy_right {
+	float: right;
+}
+
+.buy_right input[name='buy'] {
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.buy_right input[name='buy']:hover {
+	background: #d0f3ce;
+	border-radius: 7px;
+}
+
+.buy_right input[name='buy']:active {
+	background: #8ee088;
+	border-radius: 10px;
+}
+
+.page_product > h2 {
+	clear: both;
 }
 
 
