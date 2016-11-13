@@ -1,4 +1,63 @@
-body {
+.body {
+	width: 100%;
+	max-width: 1024px;
+	min-width: 320px;
+	margin: 0 auto;
+
+
+	background: red;
+}
+
+
+@media screen and (min-width:0px) and (max-width:320px) {
+/* Display 320px */
+	.body {
+
+
+		background: red;
+	}
+
+
+}
+
+@media screen and (min-width:321px) and (max-width:640px) {
+ /*Display 640px */
+	.body {
+
+
+		background: green;
+	}
+}
+
+@media screen and (min-width:641px) and (max-width:980px) {
+ /*Display 640px */
+	.body {
+
+
+		background: blue;
+	}
+}
+
+@media screen and (min-width:981px) and (max-width:1024px) {
+ /*Display 640px */
+	.body {
+
+
+		background: pink;
+	}
+}
+
+
+
+/*.navigation {
+	display: inline-block;
+	width: 100%;
+	background: #373c3f;
+	height: 35px;
+}
+*/
+
+/*body {
 	font-size: 16px;
 	background-color: #f8f8f8;
 
@@ -220,3 +279,4 @@ footer p {
 	background-color: #fffbda;
 }
 
+*/
