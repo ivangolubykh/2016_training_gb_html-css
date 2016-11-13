@@ -3,9 +3,11 @@
 	max-width: 1024px;
 	min-width: 320px;
 	margin: 0 auto;
+	font-family: 'Scada', sans-serif;
+}
 
-
-	background: red;
+.body a {
+	text-decoration: none;
 }
 
 
@@ -15,6 +17,32 @@
 
 
 		background: red;
+	}
+
+	.navigation {
+		height: 37px;
+		font-size: 12px;
+	}
+
+	.navigation .small {
+		padding: 12px 10px 11px 19px;
+		float: left;
+	}
+
+	.navigation .small_menu {
+		padding: 13px 12px 10px 10px;
+		float: right;
+	}
+
+	.navigation .small_menu img {
+		width: 16px;
+		height: 10px;
+	}
+
+	.navigation ul {
+		position: absolute;
+		max-width: 500px;
+		margin: -1000px;
 	}
 
 
@@ -27,35 +55,135 @@
 
 		background: green;
 	}
+
+	.navigation {
+		height: 74px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	.navigation .small {
+		padding: 25px 15px 20px 38px;
+		float: left;
+	}
+
+	.navigation .small_menu {
+		padding: 12px 12px;
+		float: right;
+	}
+	
+	.navigation .small_menu img {
+		padding: 13px 12px 12px 10px;
+		width: 31px;
+		height: 20px;
+
+	}
+
+	.navigation ul {
+		position: absolute;
+		max-width: 500px;
+		margin: -1000px;
+	}
+
 }
 
 @media screen and (min-width:641px) and (max-width:980px) {
- /*Display 640px */
+ /*Display 980px */
 	.body {
 
 
 		background: blue;
 	}
+
+	.navigation {
+		height: 97px;
+	}
+
+	.navigation .small, .navigation .small_menu {
+		position: absolute;
+		max-width: 500px;
+		margin: -1000px;
+	}
+
+	.navigation ul {
+		display: inline-block;
+		padding: 0px 0px 0px 54px;
+		vertical-align: middle;
+	}
+
+	.navigation ul li {
+		padding: 3px 5px 3px 0px;
+		display: inline-block;
+		font-size: 15pt;
+		text-transform: uppercase;
+	}
 }
 
-@media screen and (min-width:981px) and (max-width:1024px) {
- /*Display 640px */
+@media screen and (min-width:981px) {
+ /*Display 1024px and later */
 	.body {
 
 
 		background: pink;
 	}
+
+	.navigation {
+		height: 97px;
+	}
+
+	.navigation .small, .navigation .small_menu {
+		position: absolute;
+		max-width: 500px;
+		margin: -1000px;
+	}
+
+	.navigation ul {
+		display: inline-block;
+		padding: 0px 0px 0px 54px;
+		vertical-align: middle;
+	}
+
+	.navigation ul li {
+		padding: 3px 5px 3px 0px;
+		display: inline-block;
+		font-size: 15pt;
+		text-transform: uppercase;
+	}
 }
 
 
-
-/*.navigation {
+.navigation {
 	display: inline-block;
+	font-weight: bold;
 	width: 100%;
 	background: #373c3f;
-	height: 35px;
+	color: white;
 }
-*/
+
+.navigation a {
+	font-weight: bold;
+	color: white;
+}
+
+.navigation .nothing {
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+	background: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*body {
 	font-size: 16px;
@@ -141,7 +269,6 @@ footer p {
 
 .form_contact fieldset {
 	width: auto;
-	/*margin: 0 auto;*/
 	text-align: center;
 	line-height: 48px;
 }
@@ -193,7 +320,7 @@ footer p {
 }
 
 .blocks_start > div{
-	float: left; /* этот блок прижимаем влево, обтекаем его справа */
+	float: left;
 	padding: 10px;
 }
 .blocks_end {
