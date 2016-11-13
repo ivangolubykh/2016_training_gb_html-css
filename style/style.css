@@ -35,10 +35,27 @@
 		height: 10px;
 	}
 
-	.navigation ul {
+	.navigation > ul {
 		position: absolute;
 		max-width: 500px;
 		margin: -1000px;
+	}
+
+	.small_menu ul {
+		position: absolute;
+		margin-left: -1000px;
+		max-width: 500px;
+	}
+
+	.small_menu:hover ul {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		padding: 4px;
+		background: #373c3f;
+		text-align: right;
+		margin-top: -10px;
+		margin-left: -55px;
 	}
 
 	.banner_01 img {
@@ -111,6 +128,23 @@
 		position: absolute;
 		max-width: 500px;
 		margin: -1000px;
+	}
+
+	.small_menu ul {
+		position: absolute;
+		margin-left: -1000px;
+		max-width: 500px;
+	}
+
+	.small_menu:hover ul {
+		display: block;
+		position: absolute;
+		z-index: 2;
+		padding: 4px;
+		background: #373c3f;
+		text-align: right;
+		margin-top: -20px;
+		margin-left: -90px;
 	}
 
 	.banner_01 img {
