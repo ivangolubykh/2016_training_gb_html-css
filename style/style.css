@@ -1,7 +1,7 @@
 .body {
 	width: 100%;
 	max-width: 1024px;
-	min-width: 250px;
+	min-width: 300px;
 	margin: 0 auto;
 	font-family: 'Scada', sans-serif;
 	background: #ebebeb;
@@ -53,20 +53,32 @@
 		width: 100%;
 	}
 
-	.content h1 {
+	.content {
+		font-size: 13.5pt;
+	}
+
+	.content h1, .content h2 {
 		margin: 35px 30px 35px 40px;
 		font-size: 19pt;
 	}
 
 	.content p {
 		margin: 35px 30px 35px 40px;
-		font-size: 13.5pt;
 		text-align: left;
 		text-indent: 0;
 	}
 
+	.content > div {
+		width: 100%;
+	}
 
+	.next_product {
+		font-size: 13.5pt;
+	}
 
+	.content ul {
+		margin: 35px 30px 35px 40px;
+	}
 }
 
 @media screen and (min-width:321px) and (max-width:640px) {
@@ -113,18 +125,32 @@
 		width: 100%;
 	}
 
-	.content h1 {
+	.content {
+		font-size: 22pt;
+	}
+
+	.content h1, .content h2 {
 		margin: 35px 30px 35px 40px;
 		font-size: 30pt;
 	}
 
 	.content p {
 		margin: 35px 30px 35px 40px;
-		font-size: 22pt;
 		text-align: left;
 		text-indent: 0;
 	}
 
+	.content > div {
+		width: 100%;
+	}
+
+	.next_product {
+		font-size: 16pt;
+	}
+
+	.content ul {
+		margin: 35px 30px 35px 40px;
+	}
 }
 
 @media screen and (min-width:641px) and (max-width:980px) {
@@ -174,18 +200,31 @@
 		width: 100%;
 	}
 
-	.content h1 {
+	.content {
+		font-size: 14pt;
+	}
+
+	.content h1, .content h2 {
 		margin: 35px 30px 35px 40px;
 		font-size: 30pt;
 	}
 
 	.content p {
 		margin: 35px 30px 35px 40px;
-		font-size: 14pt;
 		text-indent: 0;
 	}
 
+	.content > div {
+		width: 50%;
+	}
 
+	.next_product {
+		font-size: 14pt;
+	}
+
+	.content ul {
+		margin: 35px 30px 35px 40px;
+	}
 }
 
 @media screen and (min-width:981px) {
@@ -235,18 +274,31 @@
 		width: 100%;
 	}
 
-	.content h1 {
+	.content {
+		font-size: 14pt;
+	}
+
+	.content h1, .content h2 {
 		margin: 35px 30px 35px 40px;
 		font-size: 30pt;
 	}
 
 	.content p {
 		margin: 35px 30px 35px 40px;
-		font-size: 14pt;
 		text-indent: 0;
 	}
 
+	.content > div {
+		width: 50%;
+	}
 
+	.next_product {
+		font-size: 14pt;
+	}
+
+	.content ul {
+		margin: 35px 30px 35px 40px;
+	}
 }
 
 
@@ -288,11 +340,23 @@ header {
 	color: #088ca5;
 }
 
-.content div, .content h1 {
-	/*margin: 15px;*/
-	/*display: block;*/
+.content > div {
+	display: inline-block;
+	vertical-align: top;
 }
 
+.content > div > div {
+	padding: 30px 30px;
+}
+
+.next_product a:visited, .next_product a:link {
+	color: black;
+}
+
+.next_product a {
+	display: inline-block;
+	margin: 7px;
+}
 
 footer {
 	padding: 10px 0px 20px 0px;
@@ -309,96 +373,57 @@ footer p {
 	text-align: right;
 }
 
-
-/*body {
-	font-size: 16px;
-	background-color: #f8f8f8;
-
-	-webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-}
-p {
-	text-align: justify;
-	text-indent: 2em;
-}
-h1, h2, h3 {
+.buy_ship > section {
+	overflow: hidden;
+	padding: 5px;
 	text-align: center;
 }
 
-.index header {
-	height: 120px;
-	margin: 0 auto;
+.buy_left {
+	float: left;
 }
 
-header {
- background-image: url(image/header_fon_1.jpg);
+.buy_ship input[name='buy'] {
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
 }
 
-header li:hover a {
-	color: green;
+.buy_ship input[name='buy']:hover {
+	background: #d0f3ce;
+	border-radius: 7px;
 }
 
-header > img {
-	display: inline-block;
-	vertical-align: middle;
-	border: 0px;
-	margin-left: 15px;
-	padding: 0px;
-	width: 134px;
-	height: 100px;
+.buy_ship input[name='buy']:active {
+	background: #8ee088;
+	border-radius: 10px;
 }
 
-
-header ul {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
-	padding: 0px;
-	text-align: right;
-	max-width: 551px;
-	vertical-align: middle;
+.buy_ship p {
+	margin: 2px;
 }
 
-.index header ul {
-	width: 551px;
-}
-
-header li {
-	padding: 3px 5px;
-	display: inline-block;
-}
-
-header > li > a {
-	font-style: italic;
-	font-size: 17px;
-	color: #070856;
-}
-
-footer {
-	height: 50px;
-	margin: 0 auto;
-	padding: 3px 0px;
+.border_img {
 	text-align: center;
-	background: #e3e3e3;
 }
 
-footer p {
-	text-align: right;
-	margin: 10px 20px 0px 0px;
+.border_img img {
+	border-style: groove;
+	border-color: #001089;
+	border-width: 3px
 }
 
-.index footer, .index header {
-	width: 700px;
+.border_img img:hover {
+	border-color: rgba(0,0,0,0);
 }
 
 .form_contact fieldset {
 	width: auto;
 	text-align: center;
-	line-height: 48px;
+	border: 3px groove black;
 }
 .form_contact fieldset input {
-	width: 300px;
+	width: 280px;
 	height: 32px;
 	color: #6b64ad;
 	font-size: 18px;
@@ -406,7 +431,7 @@ footer p {
 	border-radius: 15px;
 }
 .form_contact fieldset textarea {
-	width: 350px;
+	width: 280px;
 	height: 250px;
 	color: #6b64ad;
 	font-size: 18px;
@@ -418,117 +443,8 @@ footer p {
 	text-transform: capitalize;
 }
 
-.chetire_a {
-	color: black;
-	font-size: 18px;
-	font-weight: 400;
-	background: #eaeaea;
-}
-.chetire_b {
-	color: #707070;
-	font-size: 14px;
-	font-style: italic;
-	line-height: 16px;
-}
-.chetire_c {
-	color: #484343;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	text-align: left;
-}
-.chetire_d {
-	list-style-image: url(image/strelka_right_1.gif);
-	font-style: italic;
-	line-height: 17px;
-	color: #565f58;
-}
-
-.blocks_start > div{
-	float: left;
-	padding: 10px;
-}
-.blocks_end {
-	clear: both;
-}
-
-.border_img img {
-	border-style: groove;
-	border-color: #001089;
-	border-width: 3px
-
-}
-
-.border_img img:hover {
-	border-width: 0px;
-	margin: 3px;
-
-}
-
-.page_product p:first-letter {
-	font: italic 1.5em  sans-serif;
-}
-
-.table_th, .table_th td {
-	border: 1px solid black;
-	vertical-align: center;
-	text-align: center;
-	border-collapse: collapse;
-	margin: 0 auto;
-	padding: 3px;
-}
-
-.table_th tr:first-child {
-	height: 50;
-}
-
-.container {
-	width: 700px;
-	margin: 0 auto;
-}
-
-.buy_ship > section {
-	overflow: hidden;
-	padding: 5px;
-}
-
-.buy_left, .buy_right {
-	width: 150px;
-	text-align: center;
-}
-
-.buy_left {
-	float: left;
-}
-
-.buy_right {
-	float: right;
-}
-
-.buy_right input[name='buy'] {
-	width: 80px;
-	height: 30px;
-	border-radius: 5px;
-}
-
-.buy_right input[name='buy']:hover {
-	background: #d0f3ce;
-	border-radius: 7px;
-}
-
-.buy_right input[name='buy']:active {
-	background: #8ee088;
-	border-radius: 10px;
-}
-
-.page_product > h2 {
-	clear: both;
-}
-
-
 #email:focus {
 	color: #050f5f;
 	background-color: #fffbda;
 }
 
-*/
