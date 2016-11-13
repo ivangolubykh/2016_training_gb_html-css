@@ -1,0 +1,91 @@
+body {
+	font-size: 16px;
+	background-color: #f8f8f8;
+
+	-webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+}
+p {
+	text-align: justify;
+	text-indent: 2em;
+}
+h1, h2, h3 {
+	text-align: center;
+}
+
+fieldset {
+	width: auto;
+	/*margin: 0 auto;*/
+	text-align: center;
+	line-height: 48px;
+}
+fieldset input {
+	width: 300px;
+	height: 32px;
+	color: #6b64ad;
+	font-size: 18px;
+	background: #F3F3F3;
+	border-radius: 15px;
+}
+fieldset textarea {
+	width: 350px;
+	height: 250px;
+	color: #6b64ad;
+	font-size: 18px;
+	background: #F3F3F3;
+	border-radius: 10px;
+}
+
+.main_menu > li > a {
+	font-style: italic;
+	font-size: 17px;
+	color: #070856;
+}
+.main_menu {
+	list-style-type: none;
+}
+
+.chetire_a {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background: #eaeaea;
+}
+.chetire_b {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+.chetire_c {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.chetire_d {
+	list-style-image: url(image/strelka_right_1.gif);
+	font-style: italic;
+	line-height: 17px;
+	color: #565f58;
+}
+
+.footer {
+	text-align: center;
+}
+
+.blocks_start > div{
+	float: left; /* этот блок прижимаем влево, обтекаем его справа */
+	padding: 10px;
+}
+.blocks_end {
+	clear: both;
+}
+
+.border_img img {
+	border-style: groove;
+	border-color: #001089;
+
+}

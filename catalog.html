@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Второй урок</title>
-	<style type="text/css">
-		.tovari div{
- 			float: left; /* этот блок прижимаем влево, обтекаем его справа */
- 			margin: 10px;
-		}
-		.endfloat {
-			clear: both;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<ul>
+	<ul class="main_menu">
 		<li><a href="index.html">Главная</a></li>
 		<li><a href="catalog.html">Каталог</a></li>
 		<li><a href="contacts.html">Контакты</a></li>
 	</ul>
 	<hr>
 	<h1>Каталог</h1>
-	<div class="tovari">
+	<div class="blocks_start">
 		<div><center><a href="tovar1.html"><img src="image/tovar1/JA391EMMHC28_1_v1.jpg" height="250">
 		<br>Джинсы Jack &amp; Jones TIM</a></center>
 		</div>
@@ -33,9 +25,9 @@
 		</div>
 
 	</div>
-	<br class="endfloat">
+	<br class="blocks_end">
 	<hr>
-	<p>Все права защищены &copy;</p>
+	<p class="footer">Все права защищены &copy;</p>
 </body>
 </html>
 
