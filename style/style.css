@@ -43,8 +43,10 @@
 
 	.small_menu ul {
 		position: absolute;
-		margin-left: -1000px;
+		margin: -1000px;
 		max-width: 500px;
+		transform: scale(2, 0) rotate(90deg);
+		transition: transform 0.9s;
 	}
 
 
@@ -57,6 +59,7 @@
 		text-align: right;
 		margin-top: 5px;
 		margin-left: -55px;
+		transform: scale(1, 1)  rotate(0deg);
 	}
 
 /*	.small_menu:hover ul {
@@ -147,6 +150,8 @@
 		position: absolute;
 		margin-left: -1000px;
 		max-width: 500px;
+		transform: scale(2, 0) rotate(90deg);
+		transition: transform 0.9s;
 	}
 
 
@@ -159,6 +164,7 @@
 		text-align: right;
 		margin-top: 5px;
 		margin-left: -90px;
+		transform: scale(1, 1)  rotate(0deg);
 	}
 
 	/*.small_menu:hover ul {
