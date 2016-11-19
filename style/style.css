@@ -45,7 +45,15 @@
 		position: absolute;
 		margin: -1000px;
 		max-width: 500px;
-		transform: scale(2, 0) rotate(90deg);
+		-moz-transform: scale(0, 0) rotate(90deg); /* Для Firefox */
+	    -ms-transform: scale(0, 0) rotate(90deg); /* Для IE */
+	    -webkit-transform: scale(0, 0) rotate(90deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: scale(0, 0) rotate(90deg); /* Для Opera */
+		transform: scale(0, 0) rotate(90deg);
+		-webkit-transition: transform 0.9s;
+	    -moz-transition: transform 0.9s;
+	    -o-transition: transform 0.9s;
+	    transition: transform 0.9s;
 		transition: transform 0.9s;
 	}
 
@@ -59,7 +67,11 @@
 		text-align: right;
 		margin-top: 5px;
 		margin-left: -55px;
-		transform: scale(1, 1)  rotate(0deg);
+		-moz-transform: scale(1, 1) rotate(0deg); /* Для Firefox */
+	    -ms-transform: scale(1, 1) rotate(0deg); /* Для IE */
+	    -webkit-transform: scale(1, 1) rotate(0deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: scale(1, 1) rotate(0deg); /* Для Opera */
+		transform: scale(1, 1) rotate(0deg);
 	}
 
 /*	.small_menu:hover ul {
@@ -150,7 +162,15 @@
 		position: absolute;
 		margin-left: -1000px;
 		max-width: 500px;
-		transform: scale(2, 0) rotate(90deg);
+		-moz-transform: scale(0, 0) rotate(90deg); /* Для Firefox */
+	    -ms-transform: scale(0, 0) rotate(90deg); /* Для IE */
+	    -webkit-transform: scale(0, 0) rotate(90deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: scale(0, 0) rotate(90deg); /* Для Opera */
+		transform: scale(0, 0) rotate(90deg);
+		-webkit-transition: transform 0.9s;
+	    -moz-transition: transform 0.9s;
+	    -o-transition: transform 0.9s;
+	    transition: transform 0.9s;
 		transition: transform 0.9s;
 	}
 
@@ -164,7 +184,11 @@
 		text-align: right;
 		margin-top: 5px;
 		margin-left: -90px;
-		transform: scale(1, 1)  rotate(0deg);
+		-moz-transform: scale(1, 1) rotate(0deg); /* Для Firefox */
+	    -ms-transform: scale(1, 1) rotate(0deg); /* Для IE */
+	    -webkit-transform: scale(1, 1) rotate(0deg); /* Для Safari, Chrome, iOS */
+	    -o-transform: scale(1, 1) rotate(0deg); /* Для Opera */
+		transform: scale(1, 1) rotate(0deg);
 	}
 
 	/*.small_menu:hover ul {
